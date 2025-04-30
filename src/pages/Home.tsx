@@ -32,7 +32,7 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
                 <div className="relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-                  <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop" alt="Image to music conversion visualization" className="w-full h-64 object-cover opacity-80" />
+                  <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop" alt="Image to music conversion visualization" className="w-full h-90 object-cover opacity-80" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-black/50 backdrop-blur-sm p-4 rounded-xl">
                       <div className="flex items-center space-x-3">
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </section>
       {/* How It Works Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-20">
+      <section className="bg-yellow-50 dark:bg-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
