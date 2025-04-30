@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "./ThemeProvider";
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from "lucide-react";
