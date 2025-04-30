@@ -115,10 +115,10 @@ const Navbar = () => {
               How It Works
             </Link>
             <Link
-              to="/pricing"
+              to="/upload"
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Pricing
+              Create Music
             </Link>
             <Link
               to="/contact"
