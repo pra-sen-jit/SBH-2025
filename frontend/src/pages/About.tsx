@@ -1,4 +1,5 @@
 import { AwardIcon, BookOpenIcon, UsersIcon, HeartIcon } from "lucide-react";
+
 const About = () => {
   return (
     <div className="w-full">
@@ -14,24 +15,25 @@ const About = () => {
           </p>
         </div>
       </section>
+
       {/* Our Story */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-gray-600 font-serif dark:text-gray-400 mb-4">
                 ImagiTune began with a simple question: What if we could hear
                 what we see? Our founder, a synesthete who experiences sound and
                 color as intertwined sensations, wanted to share this unique
                 perception with the world.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-gray-600 font-serif dark:text-gray-400 mb-4">
                 Founded in 2021, our team of musicians, AI researchers, and
                 visual artists came together to create technology that bridges
                 the gap between visual and auditory experiences.
               </p>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 font-serif dark:text-gray-400">
                 Today, ImagiTune serves creators, educators, therapists, and
                 curious minds who want to explore the relationship between
                 images and sound in new and exciting ways.
@@ -42,12 +44,13 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop"
                 alt="The AudioVision team collaborating"
-                className="relative rounded-lg shadow-lg w-full h-auto"
+                className="relative rounded-lg shadow-lg w-full h-auto transition-transform duration-300 transform hover:scale-105"
               />
             </div>
           </div>
         </div>
       </section>
+
       {/* Our Values */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,6 +116,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* Team Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,7 +134,7 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop"
                 alt="Sarah Johnson"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover transition-transform duration-300 transform hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">Sarah Johnson</h3>
@@ -147,7 +151,7 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
                 alt="David Chen"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover transition-transform duration-300 transform hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">David Chen</h3>
@@ -162,7 +166,7 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop"
                 alt="Maya Rodriguez"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover transition-transform duration-300 transform hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">Maya Rodriguez</h3>
@@ -181,4 +185,5 @@ const About = () => {
     </div>
   );
 };
+
 export default About;
