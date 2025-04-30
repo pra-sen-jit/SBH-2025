@@ -1,8 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRightIcon, MusicIcon, ImageIcon, SparklesIcon, ZapIcon, StarIcon } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  ArrowRightIcon,
+  MusicIcon,
+  ImageIcon,
+  SparklesIcon,
+  ZapIcon,
+  StarIcon,
+} from "lucide-react";
 const Home = () => {
-  return <div className="w-full">
+  return (
+    <div className="w-full">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 dark:from-black dark:via-purple-950 dark:to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
@@ -20,10 +27,16 @@ const Home = () => {
                 mood and essence of your pictures.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/how-it-works" className="px-6 py-3 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
+                <Link
+                  to="/how-it-works"
+                  className="px-6 py-3 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
+                >
                   Learn More
                 </Link>
-                <Link to="/signup" className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium hover:from-purple-700 hover:to-blue-700 transition-colors flex items-center justify-center">
+                <Link
+                  to="/signup"
+                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium hover:from-purple-700 hover:to-blue-700 transition-colors flex items-center justify-center"
+                >
                   Get Started <ArrowRightIcon size={18} className="ml-2" />
                 </Link>
               </div>
@@ -32,7 +45,11 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
                 <div className="relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-                  <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop" alt="Image to music conversion visualization" className="w-full h-90 object-cover opacity-80" />
+                  <img
+                    src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop"
+                    alt="Image to music conversion visualization"
+                    className="w-full h-64 object-cover opacity-80"
+                  />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-black/50 backdrop-blur-sm p-4 rounded-xl">
                       <div className="flex items-center space-x-3">
@@ -49,11 +66,11 @@ const Home = () => {
         </div>
       </section>
       {/* How It Works Section */}
-      <section className="bg-yellow-50 dark:bg-gray-800 py-20">
+      <section className="bg-gray-50 dark:bg-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How AudioVision Works
+              How ImagiTune Works
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Our advanced AI analyzes the visual elements of your images to
@@ -63,7 +80,10 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mb-6">
-                <ImageIcon size={24} className="text-purple-600 dark:text-purple-400" />
+                <ImageIcon
+                  size={24}
+                  className="text-purple-600 dark:text-purple-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Upload Your Image</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -73,7 +93,10 @@ const Home = () => {
             </div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
-                <SparklesIcon size={24} className="text-blue-600 dark:text-blue-400" />
+                <SparklesIcon
+                  size={24}
+                  className="text-blue-600 dark:text-blue-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">AI Analysis</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -84,7 +107,10 @@ const Home = () => {
             </div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-6">
-                <MusicIcon size={24} className="text-green-600 dark:text-green-400" />
+                <MusicIcon
+                  size={24}
+                  className="text-green-600 dark:text-green-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Receive Your Music</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -103,7 +129,7 @@ const Home = () => {
               Powerful Features
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              AudioVision offers advanced tools to create the perfect audio
+              ImagiTune offers advanced tools to create the perfect audio
               representation of your images.
             </p>
           </div>
@@ -111,7 +137,10 @@ const Home = () => {
             <div className="flex">
               <div className="mr-4">
                 <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center">
-                  <ZapIcon size={20} className="text-purple-600 dark:text-purple-400" />
+                  <ZapIcon
+                    size={20}
+                    className="text-purple-600 dark:text-purple-400"
+                  />
                 </div>
               </div>
               <div>
@@ -127,7 +156,10 @@ const Home = () => {
             <div className="flex">
               <div className="mr-4">
                 <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                  <StarIcon size={20} className="text-blue-600 dark:text-blue-400" />
+                  <StarIcon
+                    size={20}
+                    className="text-blue-600 dark:text-blue-400"
+                  />
                 </div>
               </div>
               <div>
@@ -143,7 +175,10 @@ const Home = () => {
             <div className="flex">
               <div className="mr-4">
                 <div className="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center">
-                  <MusicIcon size={20} className="text-green-600 dark:text-green-400" />
+                  <MusicIcon
+                    size={20}
+                    className="text-green-600 dark:text-green-400"
+                  />
                 </div>
               </div>
               <div>
@@ -159,7 +194,10 @@ const Home = () => {
             <div className="flex">
               <div className="mr-4">
                 <div className="w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center">
-                  <SparklesIcon size={20} className="text-amber-600 dark:text-amber-400" />
+                  <SparklesIcon
+                    size={20}
+                    className="text-amber-600 dark:text-amber-400"
+                  />
                 </div>
               </div>
               <div>
@@ -183,11 +221,15 @@ const Home = () => {
             Join thousands of creators who are already using AudioVision to
             create unique musical experiences.
           </p>
-          <Link to="/signup" className="inline-block px-8 py-4 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-100 transition-colors">
+          <Link
+            to="/signup"
+            className="inline-block px-8 py-4 rounded-lg bg-white text-gray-900 font-medium hover:bg-gray-100 transition-colors"
+          >
             Get Started for Free
           </Link>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
 export default Home;

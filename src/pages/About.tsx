@@ -1,12 +1,12 @@
-import React from 'react';
-import { AwardIcon, BookOpenIcon, UsersIcon, HeartIcon } from 'lucide-react';
+import { AwardIcon, BookOpenIcon, UsersIcon, HeartIcon } from "lucide-react";
 const About = () => {
-  return <div className="w-full">
+  return (
+    <div className="w-full">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 dark:from-black dark:via-purple-950 dark:to-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About AudioVision
+            About ImagiTune
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We're on a mission to revolutionize the way people experience visual
@@ -21,7 +21,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                AudioVision began with a simple question: What if we could hear
+                ImagiTune began with a simple question: What if we could hear
                 what we see? Our founder, a synesthete who experiences sound and
                 color as intertwined sensations, wanted to share this unique
                 perception with the world.
@@ -32,14 +32,18 @@ const About = () => {
                 the gap between visual and auditory experiences.
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                Today, AudioVision serves creators, educators, therapists, and
+                Today, ImagiTune serves creators, educators, therapists, and
                 curious minds who want to explore the relationship between
                 images and sound in new and exciting ways.
               </p>
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-xl opacity-20"></div>
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop" alt="The AudioVision team collaborating" className="relative rounded-lg shadow-lg w-full h-auto" />
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop"
+                alt="The AudioVision team collaborating"
+                className="relative rounded-lg shadow-lg w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -56,7 +60,10 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mb-6">
-                <BookOpenIcon size={24} className="text-purple-600 dark:text-purple-400" />
+                <BookOpenIcon
+                  size={24}
+                  className="text-purple-600 dark:text-purple-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Innovation</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -66,7 +73,10 @@ const About = () => {
             </div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
-                <UsersIcon size={24} className="text-blue-600 dark:text-blue-400" />
+                <UsersIcon
+                  size={24}
+                  className="text-blue-600 dark:text-blue-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Inclusivity</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -76,7 +86,10 @@ const About = () => {
             </div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-6">
-                <AwardIcon size={24} className="text-green-600 dark:text-green-400" />
+                <AwardIcon
+                  size={24}
+                  className="text-green-600 dark:text-green-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Excellence</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -86,7 +99,10 @@ const About = () => {
             </div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
               <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center mb-6">
-                <HeartIcon size={24} className="text-amber-600 dark:text-amber-400" />
+                <HeartIcon
+                  size={24}
+                  className="text-amber-600 dark:text-amber-400"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Creativity</h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -105,13 +121,17 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              The passionate individuals behind AudioVision's innovative
+              The passionate individuals behind ImagiTune's innovative
               technology.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop" alt="Sarah Johnson" className="w-full h-64 object-cover" />
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop"
+                alt="Sarah Johnson"
+                className="w-full h-64 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">Sarah Johnson</h3>
                 <p className="text-purple-600 dark:text-purple-400 mb-4">
@@ -124,7 +144,11 @@ const About = () => {
               </div>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="David Chen" className="w-full h-64 object-cover" />
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+                alt="David Chen"
+                className="w-full h-64 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">David Chen</h3>
                 <p className="text-blue-600 dark:text-blue-400 mb-4">CTO</p>
@@ -135,7 +159,11 @@ const About = () => {
               </div>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" alt="Maya Rodriguez" className="w-full h-64 object-cover" />
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop"
+                alt="Maya Rodriguez"
+                className="w-full h-64 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">Maya Rodriguez</h3>
                 <p className="text-green-600 dark:text-green-400 mb-4">
@@ -150,6 +178,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
 export default About;

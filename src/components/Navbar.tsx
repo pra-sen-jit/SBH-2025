@@ -1,84 +1,141 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTheme } from './ThemeProvider';
-import { MoonIcon, SunIcon, MenuIcon, XIcon } from 'lucide-react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useTheme } from "./ThemeProvider";
+import { MoonIcon, SunIcon, MenuIcon, XIcon } from "lucide-react";
 const Navbar = () => {
-  const {
-    theme,
-    toggleTheme
-  } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+  return (
+    <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
               <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                AudioVision
+                ImagiTune
               </span>
             </Link>
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/"
+              className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Home
             </Link>
-            <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/about"
+              className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               About
             </Link>
-            <Link to="/how-it-works" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/how-it-works"
+              className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               How It Works
             </Link>
-            <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
-              Pricing
+            <Link
+              to="/upload"
+              className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              Create Music
             </Link>
-            <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/contact"
+              className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Contact
             </Link>
-            <button onClick={toggleTheme} className="ml-3 p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Toggle theme">
-              {theme === 'dark' ? <SunIcon size={20} /> : <MoonIcon size={20} />}
+            <button
+              onClick={toggleTheme}
+              className="ml-3 p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? (
+                <SunIcon size={20} />
+              ) : (
+                <MoonIcon size={20} />
+              )}
             </button>
-            <Link to="/signup" className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+            <Link
+              to="/signup"
+              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            >
               Get Started
             </Link>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleTheme} className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 mr-2" aria-label="Toggle theme">
-              {theme === 'dark' ? <SunIcon size={20} /> : <MoonIcon size={20} />}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 mr-2"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? (
+                <SunIcon size={20} />
+              ) : (
+                <MoonIcon size={20} />
+              )}
             </button>
-            <button onClick={toggleMenu} className="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Open menu">
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Open menu"
+            >
               {isMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
             </button>
           </div>
         </div>
       </div>
       {/* Mobile menu */}
-      {isMenuOpen && <div className="md:hidden">
+      {isMenuOpen && (
+        <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Home
             </Link>
-            <Link to="/about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/about"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               About
             </Link>
-            <Link to="/how-it-works" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/how-it-works"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               How It Works
             </Link>
-            <Link to="/pricing" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/pricing"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Pricing
             </Link>
-            <Link to="/contact" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              to="/contact"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Contact
             </Link>
-            <Link to="/signup" className="block px-3 py-2 rounded-md text-base font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+            <Link
+              to="/signup"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            >
               Get Started
             </Link>
           </div>
-        </div>}
-    </nav>;
+        </div>
+      )}
+    </nav>
+  );
 };
 export default Navbar;
