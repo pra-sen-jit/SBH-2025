@@ -1,1 +1,19 @@
-/venv
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Instance folder with local database
+instance/
+
+# OS-specific files
+.DS_Store
+
+# IDE/editor folders (optional)
+.vscode/
+.idea/
